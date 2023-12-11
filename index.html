@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fake Netflix</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css" />
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body class="bg-dark">
+  <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+    <div class="container-fluid px-0 mb-4">
+      <a class="navbar-brand p-0" href="#">
+        <img src="./assets/imgs/Netflix_Logo_RGB.png" alt="logo-netflix"
+          class="w-100" />
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 align-items-center">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">TV Shows</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Movies</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Recently added</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">My list</a>
+          </li>
+        </ul>
+        </div>
+        <div class="d-flex gap-4 align-items-center">
+          <i class="bi bi-search d-none d-lg-inline"></i>
+          <span class = "d-none d-lg-inline">KIDS</span>
+          <i class="bi bi-bell d-none d-lg-inline"></i>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <div class="user"><i class="bi bi-caret-down-fill btn-xs"></i></div>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">User 1</a></li>
+              <li><a class="dropdown-item" href="#">Log Out</a></li>
+            </ul>
+          </li>
+        </div>
+    </div>
+  </nav>
+  <main>
+    <div class="d-flex justify-content-between">
+      <div class="d-flex gap-4">
+        <h2 class="d-inline">TV Shows</h2>
+        <div class="dropdown d-inline">
+          <button class="btn btn-dark dropdown-toggle d-flex align-items-center gap-3 mt-1" type="button"
+            data-bs-toggle="dropdown" aria-expanded="false">
+            Genres
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Crime</a></li>
+            <li><a class="dropdown-item" href="#">Thriller</a></li>
+            <li><a class="dropdown-item" href="#">Documentaries</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="list-grid-icons">
+        <i class="bi bi-list-nested d-none d-md-inline"></i>
+        <i class="bi bi-grid d-none d-md-inline"></i>
+      </div>
+    </div>
+    <div class="container-fluid p-0 mb-4">
+      <div id="carouselExampleIndicators" class="carousel slide">
+        <h5 class="mb-3">Trending Now</h5>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="row d-flex">
+              <div class="col-md-2 col-6">
+                <img src="./assets/imgs/movies/1.png" alt="series-pictures" />
+              </div>
+              <div class="col-md-2 col-6">
+                <img src="./assets/imgs/movies/2.png" alt="series-pictures" />
+              </div>
+              <div class="col-md-2 d-none d-md-inline">
+                <img src="./assets/imgs/movies/3.png" alt="series-pictures" />
+              </div>
+              <div class="col-md-2 d-none d-md-inline">
+                <img src="./assets/imgs/movies/4.png" alt="series-pictures" />
+              </div>
+              <div class="col-md-2 d-none d-md-inline">
+                <img src="./assets/imgs/movies/5.png" alt="series-pictures" />
+              </div>
+              <div class="col-md-2 d-none d-md-inline">
+                <img src="./assets/imgs/movies/6.png" alt="series-pictures" />
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row d-flex">
+              <div class="col-md-2 col-6">
+                <img src="./assets/imgs/movies/7.png" alt="series-pictures" />
+              </div>
+              <div class="col-md-2 col-6">
+                <img src="./assets/imgs/movies/8.png" alt="series-pictures" />
+              </div>
+              <div class="col-md-2 d-none d-md-inline">
+                <img src="./assets/imgs/movies/9.png" alt="series-pictures" />
+              </div>
+              <div class="col-md-2 d-none d-md-inline">
+                <img src="./assets/imgs/movies/10.png" alt="series-pictures" />
+              </div>
+              <div class="col-md-2 d-none d-md-inline">
+                <img src="./assets/imgs/movies/11.png" alt="series-pictures" />
+              </div>
+              <div class="col-md-2 d-none d-md-inline">
+                <img src="./assets/imgs/movies/12.png" alt="series-pictures" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    <div class="container-fluid p-0 mb-4">
+      <div id="secondCarousel" class="carousel slide">
+        <h5 class="mb-3">Watch It Again</h5>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="row d-flex">
+              <div class="col-md-2 col-6">
+                <img src="./assets/imgs/movies/7.png" alt="series-pictures" />
+              </div>
+              <div class="col-md-2 col-6">
+                <img src="./assets/imgs/movies/8.png" alt="series-pictures" />
+              </div>
+              <div class="col-md-2 d-none d-md-inline">
+                <img src="./assets/imgs/movies/9.png" alt="series-pictures" />
+              </div>
+              <div class="col-md-2 d-none d-md-inline">
+                <img src="./assets/imgs/movies/10.png" alt="series-pictures" />
+              </div>
+              <div class="col-md-2 d-none d-md-inline">
+                <img src="./assets/imgs/movies/11.png" alt="series-pictures" />
+              </div>
+              <div class="col-md-2 d-none d-md-inline">
+                <img src="./assets/imgs/movies/12.png" alt="series-pictures" />
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row d-flex">
+              <div class="col-md-2 col-6">
+                <img src="./assets/imgs/movies/1.png" alt="series-pictures" />
+              </div>
+              <div class="col-md-2 col-6">
+                <img src="./assets/imgs/movies/2.png" alt="series-pictures" />
+              </div>
+              <div class="col-md-2 d-none d-md-inline">
+                <img src="./assets/imgs/movies/3.png" alt="series-pictures" />
+              </div>
+              <div class="col-md-2 d-none d-md-inline">
+                <img src="./assets/imgs/movies/4.png" alt="series-pictures" />
+              </div>
+              <div class="col-md-2 d-none d-md-inline">
+                <img src="./assets/imgs/movies/5.png" alt="series-pictures" />
+              </div>
+              <div class="col-md-2 d-none d-md-inline">
+                <img src="./assets/imgs/movies/6.png" alt="series-pictures" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#secondCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#secondCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    <div class="container-fluid p-0 mb-4">
+      <div id="thirdCarousel" class="carousel slide">
+        <h5 class="mb-3">New Releases</h5>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="row d-flex">
+              <div class="col-md-2 col-6">
+                <img src="./assets/imgs/movies/13.png" alt="series-pictures" />
+              </div>
+              <div class="col-md-2 col-6">
+                <img src="./assets/imgs/movies/14.png" alt="series-pictures" />
+              </div>
+              <div class="col-md-2 d-none d-md-inline">
+                <img src="./assets/imgs/movies/15.png" alt="series-pictures" />
+              </div>
+              <div class="col-md-2 d-none d-md-inline">
+                <img src="./assets/imgs/movies/16.png" alt="series-pictures" />
+              </div>
+              <div class="col-md-2 d-none d-md-inline">
+                <img src="./assets/imgs/movies/17.png" alt="series-pictures" />
+              </div>
+              <div class="col-md-2 d-none d-md-inline">
+                <img src="./assets/imgs/movies/18.png" alt="series-pictures" />
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row d-flex">
+              <div class="col-md-2 col-6">
+                <img src="./assets/imgs/movies/7.png" alt="series-pictures" />
+              </div>
+              <div class="col-md-2 col-6">
+                <img src="./assets/imgs/movies/8.png" alt="series-pictures" />
+              </div>
+              <div class="col-md-2 d-none d-md-inline">
+                <img src="./assets/imgs/movies/9.png" alt="series-pictures" />
+              </div>
+              <div class="col-md-2 d-none d-md-inline">
+                <img src="./assets/imgs/movies/10.png" alt="series-pictures" />
+              </div>
+              <div class="col-md-2 d-none d-md-inline">
+                <img src="./assets/imgs/movies/11.png" alt="series-pictures" />
+              </div>
+              <div class="col-md-2 d-none d-md-inline">
+                <img src="./assets/imgs/movies/12.png" alt="series-pictures" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#thirdCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#thirdCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </main>
+  <footer class="d-flex justify-content-center">
+    <div>
+      <div class = "d-flex gap-2 flex-nowrap px-md-4">
+        <i class="bi bi-facebook"></i>
+        <i class="bi bi-instagram"></i>
+        <i class="bi bi-twitter"></i>
+        <i class="bi bi-youtube"></i>
+      </div>
+      <div class="d-flex justify-content-between gap-4">
+        <div class="d-flex flex-column px-md-4">
+          <span>Audio and Subtitles</span>
+          <span>Media Center</span>
+          <span>Privacy</span>
+          <span>Contact Us</span>
+          <button class="mt-3 bg-dark">Service Code</button>
+        </div>
+        <div class="d-flex flex-column px-md-4">
+          <span>Audio Description</span>
+          <span>Investor Relations</span>
+          <span>Legal Notices</span>
+        </div>
+        <div class="d-flex flex-column px-md-4">
+          <span>Help Center</span>
+          <span>Jobs</span>
+          <span>Cookie Preferences</span>
+        </div>
+        <div class="d-flex flex-column px-md-4">
+          <span>Gift Cards</span>
+          <span>Terms of Use</span>
+          <span>Corporate Information</span>
+        </div>
+      </div>
+      <p class="my-3 px-md-4"><i class="bi bi-c-circle"></i> 1997-2019, Netflix, Inc. (i-bvwevjjjs09839832sdjsjc)</p>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script src="./script.js"></script>
+</body>
+
+</html>
